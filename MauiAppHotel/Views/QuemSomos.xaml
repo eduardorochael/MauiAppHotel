@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.QuemSomos"
+              Title="QuemSomos"
+              BackgroundImageSource="tecc.jpg">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Quem Somos"
+               FontSize="30"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               TextColor="Magenta" />
+
+        <Label Text="Somos uma empresa dedicada a oferecer as melhores acomodações."
+               FontSize="20"
+               TextColor="OrangeRed"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Eduardo Rochael Rodrigues Celestino da Silva 
+               Aluno da ETEC Turma DWR  "
+               FontSize="18"
+               TextColor="OrangeRed"
+               HorizontalTextAlignment="Center" />
+
+
+        <!-- Adicione mais conteúdo conforme necessário -->
+    </VerticalStackLayout>
+</ContentPage>
