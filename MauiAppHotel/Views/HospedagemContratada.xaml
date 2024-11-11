@@ -6,7 +6,7 @@
              BackgroundColor="AliceBlue">
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suíte Super Luxo"
+        <Label Text="{Binding QuartoSelecionado.Descricao} "
                TextColor="{StaticResource Primary}"
                FontFamily="Kalam"
                FontSize="50"
