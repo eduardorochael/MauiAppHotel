@@ -4,6 +4,7 @@
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="AliceBlue">
+    
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
         <Label Text="{Binding QuartoSelecionado.Descricao} "
@@ -16,13 +17,13 @@
             <StackLayout  Orientation="Horizontal" >
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Adultos: " />
-                    <Label Text="2" 
+                    <Label Text="{Binding QntAdultos}" 
                            TextColor="{StaticResource Primary}" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Crianças: " />
-                    <Label Text="1" 
+                    <Label Text="{Binding QntCriancas}" 
                            TextColor="{StaticResource Primary}" />
                 </HorizontalStackLayout>
             </StackLayout>
@@ -35,16 +36,21 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" />
-                <Label Grid.Row="1" Grid.Column="2" Text="3" />
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       TextColor="{StaticResource Primary}" />
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}"
+                       TextColor="{StaticResource Primary}"/>
+                <Label Grid.Row="1" Grid.Column="2"  
+                       Text= "{Binding Estadia}" TextColor="{StaticResource Primary}" />
             </Grid>
         </Frame>
 
         <Frame Margin="10">
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Label Text="Valor Total: " />
-                <Label Text="Auto" />
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"
+                       TextColor="{StaticResource Primary}"  />
+                
             </HorizontalStackLayout>
         </Frame>
 

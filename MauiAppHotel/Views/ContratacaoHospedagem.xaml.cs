@@ -7,8 +7,8 @@ public partial class ContratacaoHospedagem : ContentPage
     App PropriedadesApp;
 
     public ContratacaoHospedagem()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         PropriedadesApp = (App)Application.Current;
 
@@ -27,7 +27,7 @@ public partial class ContratacaoHospedagem : ContentPage
         {
             Hospedagem h = new Hospedagem
             {
-                QuartoSeleciondo = (Quarto)pck_quarto.SelectedItem,
+                QuartoSelecionado = (Quarto)pck_quarto.SelectedItem,
                 QntAdultos = Convert.ToInt32(stp_adultos.Value),
                 QntCriancas = Convert.ToInt32(stp_criancas.Value),
                 DataChekin = dtpck_checkin.Date,
@@ -39,7 +39,7 @@ public partial class ContratacaoHospedagem : ContentPage
             {
                 BindingContext = h
             });
-            
+
         }
         catch (Exception ex)
         {

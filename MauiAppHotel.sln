@@ -7,10 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiAppHotel", "MauiAppHote
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		56|Any CPU = 56|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BABBB506-9D44-41AA-B656-D67AAC176C7B}.56|Any CPU.ActiveCfg = 56|Any CPU
 		{BABBB506-9D44-41AA-B656-D67AAC176C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BABBB506-9D44-41AA-B656-D67AAC176C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BABBB506-9D44-41AA-B656-D67AAC176C7B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

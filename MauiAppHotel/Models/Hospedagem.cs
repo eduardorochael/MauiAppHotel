@@ -2,7 +2,7 @@
 {
       public class Hospedagem
     {
-        public Quarto QuartoSeleciondo {get; set;}
+        public Quarto QuartoSelecionado {get; set;}
         public int QntAdultos { get;set;}
         public int QntCriancas { get; set;}
         public DateTime DataChekin { get; set;}
@@ -16,8 +16,8 @@
         {
             get
             {
-                double valor_adultos = QntAdultos * QuartoSeleciondo.ValorDiariaAdulto;
-                double valor_criancas = QntCriancas * QuartoSeleciondo.ValorDiariaCrianca;
+                double valor_adultos = QntAdultos * QuartoSelecionado.ValorDiariaAdulto;
+                double valor_criancas = QntCriancas * QuartoSelecionado.ValorDiariaCrianca;
 
                 double total = (valor_adultos + valor_criancas) * Estadia;
 
